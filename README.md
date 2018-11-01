@@ -1,4 +1,4 @@
-Application that connects to spotify api.
+Application that connects to spotify API and displays the song currently being played as well as recently played tracks.
 
 Instructions for use:
 1. Create an app via the Spotify developer dashboard https://developer.spotify.com/dashboard/login
@@ -31,7 +31,7 @@ There are 3 different methods available here, this app uses authorization_code
         )  
          
               
-8. To set up so that when login is authorised it redirects back to our client app a change is needed in auth-server/authorisation_code/app.js. Find the very last 'red.redirect('/.#) to res.redirect(‘http://localhost:3000/#'  
+8. To set up so that when login is authorised it redirects back to our client app a change is needed in auth-server/authorisation_code/app.js. Find the very last 'red.redirect('/.#) and change to res.redirect(‘http://localhost:3000/#'  
 
 9. So that spotify knows what information is needed, find the declaration of scope variable in auth-server/authorization_code/app.js and add user-read-playback-state and user-read-recently-played  
 
